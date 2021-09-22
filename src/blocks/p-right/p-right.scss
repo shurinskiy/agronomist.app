@@ -1,0 +1,15 @@
+.p-right {
+	$self: &;
+	background-color: #191919;
+	border-left: 1px solid #333;
+	display: flex;
+	flex-flow: column nowrap;
+	
+	@include media('<=md') {
+		background-color: #111;
+	}
+
+	&__socials {
+		margin-top: auto;
+	}
+}

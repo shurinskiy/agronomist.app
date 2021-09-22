@@ -1,0 +1,145 @@
+@@include("_head.html") 
+<main class="main"> 
+	<div class="main__left p-left">
+		<a class="p-left__logo" href="./"><img src="./images/logo.svg" alt=""></a>
+		<nav class="p-left__navi">
+			<button class="p-left__btn p-left__btn_active">Coins</button>
+			<button class="p-left__btn">Pools</button>
+			<button class="p-left__btn">Farms</button>
+			<button class="p-left__btn">Staking</button>
+			<button class="p-left__btn">LPs</button>
+			<button class="p-left__btn" disabled>Dex analys</button>
+			<button class="p-left__btn" disabled>Notifications</button>
+		</nav>
+		<a class="p-left__docs" href="./">Docs</a>
+	</div>
+	<div class="main__top p-top">
+		<form class="p-top__search" action="./">
+			<input class="p-top__search-input" type="text" placeholder="Search...">
+		</form>
+		<button class="p-top__connect">Connect</button>
+	</div>
+	<div class="main__body">
+		<div class="c-info">
+			<div class="c-info__left">
+				<div class="c-info__vendor">
+					<span class="c-info__name c-info__name_sol">Solana</span>
+					<span class="c-info__tag">SOL</span>
+				</div>
+				<div class="c-info__price">$149.25</div>
+			</div>
+			<div class="c-info__right">
+				<div class="c-info__controls">
+					<label class="c-info__control switch">
+						<input type="checkbox"><span>DEX</span>
+					</label>
+					<label class="c-info__control switch">
+						<input type="checkbox"><span>Central Exchange</span>
+					</label>
+				</div>
+				<div class="c-info__ranges">
+					<label class="c-info__range">
+						<input type="radio" name="ranges" checked><span>24H</span>
+					</label>
+					<label class="c-info__range">
+						<input type="radio" name="ranges"><span>7D</span>
+					</label>
+					<label class="c-info__range">
+						<input type="radio" name="ranges"><span>1M</span>
+					</label>
+					<label class="c-info__range">
+						<input type="radio" name="ranges"><span>3M</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="c-graph">
+
+		</div>
+		
+		<div class="c-table">
+			<div class="c-table__head">
+				<div>
+					<button class="c-table__search" type="button"></button>
+					<button type="button">Token</button>
+				</div>
+				<div><button type="button">Price</button></div>
+				<div><button type="button">Amount</button></div>
+				<div><button type="button">Total</button></div>
+			</div>
+			<div class="c-table__body">
+				<div class="c-table__row">
+					<div class="c-table__token c-table__token_sol">
+						<span>Solana</span>
+						<span>SOL</span>
+					</div>
+					<div>$149.25</div>
+					<div>3.74</div>
+					<div>$558.19</div>
+				</div>
+				<div class="c-table__row">
+					<div class="c-table__token c-table__token_eth">
+						<span>Ethereum</span>
+						<span>ETH</span>
+					</div>
+					<div>$3512.71</div>
+					<div>1.61</div>
+					<div>$5655.46</div>
+				</div>
+				<div class="c-table__row">
+					<div class="c-table__token c-table__token_pgn">
+						<span>Polygon</span>
+						<span>MATIC</span>
+					</div>
+					<div>$1.37</div>
+					<div>757.27</div>
+					<div>$1037.45</div>
+				</div>
+				<div class="c-table__row">
+					<div class="c-table__token c-table__token_bnb">
+						<span>Binance Coin</span>
+						<span>BNB</span>
+					</div>
+					<div>$149.25</div>
+					<div>11.21</div>
+					<div>$558.19</div>
+				</div>
+				<div class="c-table__row">
+					<div class="c-table__token c-table__token_sol">
+						<span>Solana</span>
+						<span>SOL</span>
+					</div>
+					<div>$149.25</div>
+					<div>0.112</div>
+					<div>$558.19</div>
+				</div>
+				<div class="c-table__row">
+					<div class="c-table__token c-table__token_pgn">
+						<span>Polygon</span>
+						<span>MATIC</span>
+					</div>
+					<div>$1.37</div>
+					<div>554.05</div>
+					<div>$1037.45</div>
+				</div>
+				<div class="c-table__row">
+					<div class="c-table__token c-table__token_eth">
+						<span>Ethereum</span>
+						<span>ETH</span>
+					</div>
+					<div>$3512.71</div>
+					<div>1.61</div>
+					<div>$5655.46</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main__right p-right">
+		<div class="p-right__socials socials">
+			<a class="socials__item socials__item_tw" href="./"></a>
+			<a class="socials__item socials__item_gt" href="./"></a>
+			<a class="socials__item socials__item_dc" href="./"></a>
+		</div>
+	</div>
+</main> 
+@@include("_bottom.html")

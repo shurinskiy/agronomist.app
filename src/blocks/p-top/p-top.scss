@@ -1,0 +1,62 @@
+.p-top {
+	$self: &;
+	box-sizing: border-box;
+	background-color: #191919;
+	display: flex;
+	padding: 10px 20px;
+	min-height: 70px;
+	align-items: center;
+	border-bottom: 1px solid #333;
+	
+	@include media('<=xxs') {
+		flex-flow: row wrap;
+		padding: 15px 20px;
+	}
+
+	&__search {
+		background-color: #222;
+		box-sizing: border-box;
+		max-width: 560px;
+		width: 100%;
+		height: 32px;
+		border-radius: 100px;
+		padding: 0 20px 0 45px;
+		margin-right: 20px;
+
+		@include media('<=xxs') {
+			margin: 0 0 15px 0;
+		}
+	}
+	
+	&__search-input {
+		@extend %reset-input;
+		line-height: 32px;
+		font-size: 14px;
+		color: #fff;
+		width: 100%;
+
+		&::placeholder {
+			color: #777;
+			font-family: "MB", sans-serif;
+		}
+	}
+	
+	&__connect {
+		@extend %reset-button;
+		background: #69BA43;
+		margin-left: auto;
+		height: 32px;
+		width: 100%;
+		max-width: 150px;
+		padding: 0 10px;
+		border-radius: 100px;
+		color: #fff;
+		text-transform: lowercase;
+		font-family: "MB", sans-serif;
+		font-size: 14px;
+
+		@include media('<=xxs') {
+			margin: 0 auto 0 0;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.socials {
+	$self: &;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	padding: 15px;
+
+	&__item {
+		display: block;
+		width: 24px;
+		height: 24px;
+		background-position: center left;
+		background-repeat: no-repeat;
+		background-color: transparent;
+
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+
+		&_tw {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-twitter-view-grey');
+			background-size: 24px 20px;
+		}
+		
+		&_gt {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-github-view-grey');
+			background-size: 24px 24px;
+		}
+		
+		&_dc {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-discord-view-grey');
+			background-size: 24px 18px;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.switch {
+	$self: &;
+	display: inline-block;
+	margin: 0 20px 10px 0;
+
+	> span {
+		cursor: pointer;
+		display: inline-block;
+		white-space: nowrap;
+		font-family: "MSB", sans-serif;
+		line-height: 28px;
+		color: #949494;
+		background: transparent svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="50" height="28" viewBox="0 0 50 28"><rect width="50" height="28" rx="14.0" fill="#222"/></svg>') no-repeat left;
+		&::before {
+			content: "";
+			display: inline-block;
+			box-sizing: border-box;
+			width: 20px;
+			height: 20px;
+			background-color: #444;
+			border-radius: 50%;
+			vertical-align: middle;
+			margin: 0px 40px 3px 4px;
+			transition: margin 0.1s, background-color 0.1s;
+		}
+	}
+
+	> input {
+		@include hide();
+		&:checked + span::before {
+			margin: 0px 19px 3px 25px;
+			background-color: #69BA43;
+		}
+	}
+}

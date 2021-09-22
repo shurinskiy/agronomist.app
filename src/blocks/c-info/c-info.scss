@@ -1,0 +1,106 @@
+.c-info {
+	$self: &;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0 10px 20px;
+	background-color: #111;
+
+	@include media('<=xxs') {
+		flex-flow: row wrap;
+		margin-bottom: 20px;
+	}
+
+
+	&__left {
+		margin-right: 20px;
+
+		@include media('<=xxs') {
+			margin: 0 0 20px 0;
+		}
+	}
+
+	&__vendor {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	&__name {
+		display: flex;
+		align-items: center;
+		font-family: "MB", sans-serif;
+		font-size: 24px;
+		color: #fff;
+		margin-right: 15px;
+
+		&_sol::before {
+			content: '';
+			display: block;
+			width: 36px;
+			height: 36px;
+			border-radius: 50%;
+			margin-right: 10px;
+			background: url('#{$images-path}ic-solana.svg') center / 23px 18px no-repeat #000;
+		}
+	}
+
+	&__tag {
+		background-color: #2A2A2A;
+		border-radius: 5px;
+		color: #949494;
+		font-family: "MSB", sans-serif;
+		font-size: 18px;
+		line-height: 1.1;
+		padding: 4px 6px 2px;
+	}
+
+	&__price {
+		font-family: "MSB", sans-serif;
+		font-size: 32px;
+		line-height: 1.1;
+		color: #ccc;
+	}
+
+	&__right {
+
+	}
+
+	&__controls {
+		margin-bottom: 15px;
+		text-align: right;
+		
+		@include media('<=xxs') {
+			text-align: left;
+		}
+	}
+
+	&__control {
+
+	}
+
+	&__ranges {
+		text-align: right;
+
+		@include media('<=xxs') {
+			text-align: left;
+		}
+	}
+
+	&__range {
+		display: inline-block;
+		margin-right: 20px;
+		font-family: "MSB", sans-serif;
+		font-size: 12px;
+		line-height: 1.2;
+		color: #ccc;
+		cursor: pointer;
+
+		input[type="radio"] {
+			@include hide();
+			&:checked + span {
+				color: #fff;
+			}
+		}
+	}
+}
