@@ -2,6 +2,7 @@
 	$self: &;
 	margin-top: auto;
 	color: #fff;
+	background-color: #050505;
 	font-family: "MB", sans-serif;
 	position: relative;
 	@extend %scrollbars;
@@ -83,12 +84,17 @@
 
 	&__row {
 		box-sizing: border-box;
-		background-color: #191919;
+		background-color: #111;
 		display: flex;
 		align-items: center;
 		margin-bottom: 10px;
 		padding: 0 20px;
 		min-width: max-content;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #222;
+		}
 		
 		> div {
 			box-sizing: border-box;
